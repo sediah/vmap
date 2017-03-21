@@ -71,7 +71,7 @@ type AdBreak struct {
 	// Provides the player with either an inline ad response or a reference to an ad response.
 	AdSource       *AdSource `xml:",omitempty"`
 	// Defines event tracking URLs
-	TrackingEvents []Tracking `xml:"TrackingEvents>Tracking,omitempty"`
+	TrackingEvents *[]Tracking `xml:"TrackingEvents>Tracking,omitempty"`
 	// Can be used to express additional information not supported in the VMAP specification.
 	Extensions     *Extensions `xml:",omitempty"`
 }
